@@ -9,25 +9,30 @@
         body{
     margin: 0%;
     padding: 0%;
-    background-image: linear-gradient(  rgb(128, 128, 223) , rgb(49, 48, 48) , rgb(181, 63, 63));
+}   
+
+.trafficSignal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
 }
 #signalbody{
-    position: absolute;
-    width: 150px;
-    height: 350px;
-    margin-top: 50px;
-    margin-left: 500px;
+    width: 120px;
+    height: 300px;
     border: 5px solid black;
-    border-radius: 70px;
+    border-radius: 30px;
     background-color: rgb(56, 55, 55);
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 #redlight{
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    margin-left: 20px;
-    margin-top: 5px;
+    width: 80px;
+    height: 80px;
     border: 5px solid black;
     border-radius: 50%;
     display: flex;
@@ -38,11 +43,8 @@
     }
 
 #orangelight{
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    margin-top: 120px;
-    margin-left: 20px;
+    width: 80px;
+    height: 80px;
     border: 5px solid black;
     border-radius: 50%;
     display: flex;
@@ -52,11 +54,8 @@
     color: rgb(56, 55, 55);
 }
 #greenlight{
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    margin-top: 235px;
-    margin-left: 20px;
+    width: 80px;
+    height: 80px;
     border: 5px solid black;
     border-radius: 50%;
     display: flex;
@@ -66,39 +65,30 @@
     color: rgb(56, 55, 55)
 }
 #pole{
-    position: absolute;
     width: 50px;
-    height: 300px;
-    margin-top: 408px;
-    margin-left: 555px;
+    height: 100px;
     border: 1px solid black;
     background-color: black;
 }
 #base{
-    position: absolute;
     width: 150px;
     height: 50px;
-    margin-top:708px ;
-    margin-left: 500px;
     border: 5px solid black;
     background-color: black;
     border-top-right-radius: 25px;
     border-top-left-radius:25px ;
 }
 #timebox{
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 70px;
     height: 90px;
-    margin-left: 535px;
-    margin-top: 460px;
     border: 10px solid black;
     background-color: rgb(169, 162, 162);
     border-radius: 15px;
 }
 #display{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 70px;
     color: red;
 }
@@ -108,19 +98,18 @@
 
     </head>
     <body>
-        <div id="signalbody">
-            <div id="redlight">Stop</div>
-            <div id="orangelight">Slow</div>
-            <div id="greenlight">Go</div>
-        </div>
-        <div id="pole"></div>
-        <div id="base"></div>
-        <div id="holder1"></div>
-        <div id="holder2"></div>
-        <div id="holder3"></div>
-        <div id="holder4"></div>
-        <div id="timebox">
-            <div id="display"></div>
+        <div class="trafficSignal">
+            <div id="signalbody">
+                <div id="redlight">Stop</div>
+                <div id="orangelight">Slow</div>
+                <div id="greenlight">Go</div>
+            </div>
+            <div id="pole"></div>
+            <div id="timebox">
+                <div id="display"></div>
+            </div>
+            <div id="pole"></div>
+            <div id="base"></div>
         </div>
         <script>
             
